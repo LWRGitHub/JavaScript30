@@ -1,10 +1,14 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Scoped CSS Variables and JS</title>
-</head>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Scoped CSS Variables and JS</title>
+  </head>
+
 <body>
+
   <h2>Update CSS Variables with <span class='hl'>JS</span></h2>
 
   <div class="controls">
@@ -37,10 +41,6 @@
       color: var(--base);
     }
 
-    /*
-      misc styles, nothing to do with CSS variables
-    */
-
     body {
       text-align: center;
       background: #193549;
@@ -60,6 +60,7 @@
   </style>
 
   <script>
+
     const inputs = document.querySelectorAll('.controls input');
 
     function handleUpdate() {
@@ -69,6 +70,7 @@
 
     inputs.forEach(input => input.addEventListener('change', handleUpdate));
     inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
+    
   </script>
 
 
